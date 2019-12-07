@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default class Book extends React.Component{
+
+export default class SideBar extends React.Component{
     render(){
         return
     }
