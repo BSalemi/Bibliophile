@@ -3,6 +3,10 @@ import React from 'react';
 
 export default class SideBar extends React.Component{
     render(){
-        return
+        return(
+            <div id="sideBar">
+
+            </div>
+        )
     }
 }
