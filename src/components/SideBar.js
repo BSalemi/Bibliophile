@@ -4,8 +4,8 @@ import React from 'react';
 export default class SideBar extends React.Component{
     render(){
         return(
-            <div id="sideBar">
-
+            <div id="side-bar">
+                side bar
             </div>
         )
     }
