@@ -7,6 +7,17 @@ import Header from './components/Header';
 import './App.css';
 
 export default class App extends React.Component{
+
+  state = {
+    results: []
+  }
+
+  updateResults = (searchResults) => {
+    this.setState({results: searchResults},)
+    console.log(this.state.results, "results")
+    
+  }
+
   render(){
     return(
       <div id="app">
