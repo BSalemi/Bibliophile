@@ -1,6 +1,6 @@
 import React from 'react'
 
-const googleBooksUrl = "https://www.googleapis.com/books/v1/volumes?q="
+const URL = "https://www.googleapis.com/books/v1/volumes?q="
 
 export default class SearchBar extends React.Component{
 
@@ -27,6 +27,7 @@ export default class SearchBar extends React.Component{
         fetch(URL + this.state.search)
         .then(res => res.json())
         .then(books => {
+            console.log(books, "books")
             this.props.updateResults(books.items)
         })
     }

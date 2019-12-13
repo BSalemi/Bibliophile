@@ -22,9 +22,9 @@ export default class App extends React.Component{
     return(
       <div id="app">
         <Header/>
-        <SearchBar/>
+        <SearchBar updateResults={this.updateResults}/>
         <SideBar/>
-        <BooksContainer/>
+        <BooksContainer results={this.state.results}/>
       </div>
     )
   }
