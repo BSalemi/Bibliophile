@@ -16,6 +16,7 @@ export default class BooksContainer extends React.Component{
         console.log(this.props, "props in books container")
         return(
             <div id="books-container">
+               {this.props.results.length > 0 && <h2 id="books-list">Books List:</h2>}
                {this.generateBooks()}
             </div>
         )

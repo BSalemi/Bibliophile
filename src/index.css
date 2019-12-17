@@ -38,5 +38,26 @@ code {
 #search-bar{
   border: blue solid 2px; 
   width: 200px;
-
+  display: inline-block
 }
+
+#books-container{
+  border:pink solid 2px;
+  top: 60px;
+  left: 252px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  width: 1116px;
+}
+
+#books-list{
+  padding-left: 300px;
+  position:relative
+}
+
+#submit-form{
+  display: inline-block;
+  width: 75px
+}
+
