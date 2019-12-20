@@ -6,8 +6,7 @@ export default class BooksContainer extends React.Component{
 
     generateBooks = () => {
         const books = this.props.results.map((bookObj, key) => {
-            console.log(bookObj.volumeInfo.categories, "bookObj categories")
-            return <Book key={bookObj.id} title={bookObj.volumeInfo.title} author={bookObj.volumeInfo.authors} categories={bookObj.volumeInfo.categories} image={bookObj.volumeInfo.imageLinks.thumbnail} link={bookObj.volumeInfo.infoLink} description={bookObj.volumeInfo.description} maturityRating={bookObj.volumeInfo.maturityRating} averageRating={bookObj.volumeInfo.averageRating}/>
+            return <Book index={bookObj.id} title={bookObj.volumeInfo.title} genre={bookObj.volumeInfo.categories} image={'imageLinks' in bookObj.volumeInfo ? bookObj.volumeInfo.imageLinks.thumbnail : null} link={bookObj.volumeInfo.infoLink} author={bookObj.volumeInfo.authors}/>
         })
         return books
     }
