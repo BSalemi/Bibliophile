@@ -51,6 +51,14 @@ code {
   width: 1116px;
   max-height:100%;
   overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#book-card{
+  height: 350px;
+  width: 200px;
 }
 
 #books-list{
