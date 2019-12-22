@@ -24,7 +24,7 @@ export default class SearchBar extends React.Component{
      
     
     searchBooks(){
-        fetch(URL + this.state.search)
+        fetch(URL + this.state.search + "&maxResults=20")
         .then(res => res.json())
         .then(books => {
             console.log(books, "books")

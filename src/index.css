@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
 }
 
 code {
@@ -25,6 +26,7 @@ code {
   top: 50px;
   height: 500px;
   width: 250px;
+  max-height: 100%;
 }
 
 #search-bar-container{
@@ -45,15 +47,13 @@ code {
   border:pink solid 2px;
   top: 60px;
   left: 252px;
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
   width: 1116px;
   max-height:100%;
-  overflow: auto;
+  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  position: absolute;
 }
 
 #book-card{

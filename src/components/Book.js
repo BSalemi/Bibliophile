@@ -7,7 +7,7 @@ export default class Book extends React.Component{
         return(
             <div>
                 {this.props.image && <img alt="book" src={this.props.image}/>}
-               <h4><a href={this.props.link}>{this.props.title}</a></h4>
+               <h4><a  href={this.props.link}>{this.props.title}</a></h4>
                {this.props.author && this.props.author.join(", ")} <em>{this.props.genre}</em>
             </div>
         )
