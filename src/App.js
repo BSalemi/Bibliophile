@@ -2,6 +2,8 @@ import React from 'react';
 import SearchBar from './components/SearchBar';
 import SideBar from './components/SideBar';
 import BooksContainer from './containers/BooksContainer'
+import SignUp from './components/SignUp';
+import Login from './components/Login';
 import Header from './components/Header';
 
 import './App.css';

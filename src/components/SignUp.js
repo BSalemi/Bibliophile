@@ -12,9 +12,12 @@ export default class SignUp extends React.Component {
         return(
             <div id="signup-form">
                 <form>
-                    <input type="text" name="email" value={this.state.email}/>
-                    <input type="text" name="username" value={this.state.username}/>
-                    <input type="text" name="password" value={this.state.password}/>
+                    <input type="text" name="email" placeholder="Enter your Email Address" value={this.state.email}/>
+                    <br/>
+                    <input type="text" name="username" placeholder="Create a Username" value={this.state.username}/>
+                    <br/>
+                    <input type="text" name="password" placeholder="Create a Password" value={this.state.password}/>
+                    <br/>
                     <input type="submit" value="Sign Up"/>
                 </form>
             </div>
